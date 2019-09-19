@@ -1,0 +1,144 @@
+@font-face {
+  font-family: LocalFont;
+  src: url(/media/kyoto\ northern.ttf);
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-size: 10px;
+}
+
+.intro {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  background: url(/media/main.jpg);
+  display: table;
+  top: 0;
+  background-size: cover;
+}
+
+.inner {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  max-width: none;
+  position: relative;
+  z-index: 3;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 3;
+}
+
+.content {
+  font-family: LocalFont;
+  color: #f9f3f4;
+  text-shadow: 0px 0px 300px #000;
+  font-size: 350%;
+  z-index: 3;
+}
+
+@media(min-width:1200px){
+  .content{
+    font-size:500%;
+  }
+}
+
+@media(max-width:700px){
+  .content{
+    font-size:200%;
+  }
+}
+
+/* Buttons style */
+
+.btn {
+  border-radius: 4px;
+  color: #036a81;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40%;
+  padding: 3px 6px;
+  border: solid #036a81 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bolder;
+  margin: 5px;
+  z-index: 3;
+}
+
+@media(min-width:1200px){
+  .btn{
+    border-radius: 8px;
+    font-size:35%;
+    padding: 6px 12px;
+    border: solid #036a81 3px;
+  }
+}
+
+@media(max-width:700px){
+  .btn{
+    font-size:50%;
+    padding: 2px 5px;
+  }
+}
+
+.btn:hover {
+  color: #fff;
+  border: solid #fff 3px;
+}
+
+/* Type Animation */
+.txt-type > .txt {
+  border-right: 5px solid #f9f3f4;
+}
+
+/* Animation options*/
+
+.fog-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.fog-img {
+  position: absolute;
+  height: 100vh;
+  width: 300vw;
+  z-index: 2;
+}
+
+.fog-img-first {
+  background: url(/media/fog-1.png);
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: center;
+  animation: marquee 60s linear infinite;
+}
+
+.fog-img-second {
+  background: url(/media/fog-2.png);
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: center;
+  animation: marquee 30s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(-200vw, 0, 0);
+  }
+}
