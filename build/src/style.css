@@ -1,6 +1,6 @@
 @font-face {
   font-family: LocalFont;
-  src: url(/media/Balqis.ttf);
+  src: url(media/Balqis.ttf);
 }
 
 html,
@@ -16,7 +16,7 @@ body {
   height: 100%;
   width: 100%;
   margin: auto;
-  background: url(/media/main.jpg);
+  background: url(media/main.jpg);
   display: table;
   top: 0;
   background-size: cover;
@@ -118,7 +118,7 @@ body {
 }
 
 .fog-img-first {
-  background: url(/media/fog-1.png);
+  background: url(media/fog-1.png);
   background-repeat: repeat-x;
   background-size: contain;
   background-position: center;
@@ -126,7 +126,7 @@ body {
 }
 
 .fog-img-second {
-  background: url(/media/fog-2.png);
+  background: url(media/fog-2.png);
   background-repeat: repeat-x;
   background-size: contain;
   background-position: center;
