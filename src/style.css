@@ -17,6 +17,7 @@ body {
   width: 100%;
   margin: auto;
   background: url(/media/main.jpg);
+  filter:grayscale(1);
   display: table;
   top: 0;
   background-size: cover;
